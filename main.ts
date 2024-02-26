@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onGesture(Gesture.LogoUp, function () {
-    if (currentNum > 1) {
+    if (currentNum > 10) {
         currentNum = currentNum - 10
         basic.showNumber(currentNum)
         basic.pause(5000)
@@ -56,7 +56,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.pause(5000)
 })
 input.onGesture(Gesture.LogoDown, function () {
-    if (currentNum < 100) {
+    if (currentNum <= 90) {
         currentNum = currentNum + 10
         basic.showNumber(currentNum)
         basic.pause(5000)
